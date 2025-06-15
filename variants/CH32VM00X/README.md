@@ -78,8 +78,9 @@ Shared pinout for CH32V003F4P6 /CH32V002F4P6/CH32V006F8P6
 When newly added menu items are not visible in the Arduino IDE v2.x, the cause can be an application cache that is not automatically refreshed.
 Assuming you are using the Arduino IDE v2.x under Windows, the menu can be cached in such a way that restarting the IDE is insufficient. For instance when I added my definition for the X033 board (and later again for the the V002), it would not show the board to be selected. I had to exit the IDE, then remove this folder prior to restarting the IDE:
  - `C:\Users\<username>\AppData\Roaming\arduino-ide`
- - 
-Somewhere I read that this is a known IDE 2.x issue and that it's okay to delete the entire folder. Apparently that folder contains some state information. After deleting it and restarting the IDE, you need to select the board again and then the new menu should be shown.
+
+I read that this is a [known IDE 2.x issue](https://github.com/arduino/arduino-ide/issues/1030) and that it's okay to [delete the entire folder](https://github.com/arduino/arduino-ide/issues/1030#issuecomment-1152005617). This [Arduino post](https://support.arduino.cc/hc/en-us/articles/4415103213714-Find-sketches-libraries-board-cores-and-other-files-on-your-computer) gives an overview of all folders used by the IDE. Apparently that `arduino-ide` folder contains some state information. After deleting it and restarting the IDE, you need to select the board again and then the new menu should be shown.
+(Issue [#110](https://github.com/openwch/arduino_core_ch32/issues/110) shares some frustration, followed by [this solution](https://github.com/openwch/arduino_core_ch32/issues/110#issuecomment-2768025106) ).
 
 ### Updating OpenOCD ###
 To support the new CH32VM00X boards (CH32V002, CH32V006, etc), the installation done when installing CH32 Arduino core v 1.0.4 needs to be updated.
