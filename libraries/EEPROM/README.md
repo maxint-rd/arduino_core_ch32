@@ -12,6 +12,7 @@ Ported to CH32 by Maxint R&D, based on multiple sources:
 
 ## Table of contents
 - [CH32V003 emulated EEPROM](#ch32v003-emulated-eeprom)
+- [CH32 boards with larger emulated EEPROM](#ch32-boards-with-larger-emulated-eeprom)
 - [How to use this library](#how-to-use-this-library)
 - [Library functions](#library-functions)
 - [Features & limitations](#features--limitations)
@@ -161,8 +162,9 @@ The method returns a `uint32_t` value, containing the data0 and data1 bytes and 
 ---
 
 ## Features & limitations
-- The first release of this library was made only for the CH32V003 and has been tested on that MCU only. Other members of the CH32 may behave incorrectly or not work at all. 
-- This EEPROM implementation for the CH32V003 has only 26 bytes available. When addressing more, things are likely to go wrong. A future release may allow using more pages from the flash memory.
+- The first release of this library was made for the CH32V003, offering 26 bytes of emulated EEPROM. It was tested on CH32V003 and CH32X033.
+. The next release offered 122 bytes of emulated EEPROM on CH32X035/X033 and CH32VM00X (V002/V004/V006/V008). It passed tests on V002, V006 and X033.
+- Other members of the CH32 may behave incorrectly or not work at all. A test on V103 showed issues writing more than the first two bytes.
 - Most CH32 EEPROM methods are the same as their equivalent on regular Arduino's. BEWARE: The begin() and end() methods are like their counterparts for ESP8266/ESP32, but are very different from the begin() and end() methods of EEPROM v2.0 by Christopher Andrews, who introduced them to support C++ iterators. This library follows the begin() convention introduced by the Serial and Wire classes, i.e. to initialize the object.
 
 ## Disclaimer
