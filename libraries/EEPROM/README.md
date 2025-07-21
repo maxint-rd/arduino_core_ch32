@@ -6,7 +6,7 @@ The EEPROM library provides an easy to use interface to interact with the intern
 This CH32 version of the library provides a familiar API to emulated EEPROM using the Option bytes area in flash memory.
 
 Ported to CH32 by Maxint R&D, based on multiple sources:
-- Code from the Option Data example of CH32V003fun by @CNLOHR.
+- Code from the Option Data example of CH32V003fun by @CNLOHR and various WCH EVT Flash examples.
 - Arduino original copyright (c) 2006 David A. Mellis.  All right reserved. New version by Christopher Andrews 2015.
 - ESP8266 version copyright (c) 2014 Ivan Grokhotkov. All rights reserved.
 
@@ -41,6 +41,17 @@ Layout for uint8_t _data[26]: { ob[4], ob[6], ob[16...62] ].
 
 The first release of this library was made for the CH32V003 and only uses the user select word storage area. 
 It was tested using Arduino IDE 2.3.2 and OpenWCH core 1.0.4. 
+
+### CH32 boards with larger emulated EEPROM 
+Depending on the board, the size of the user-defined information storage area can be different, allowing for a larger emulated EEPROM. 
+For all CH32 chips the starting address is 0x1FFFF800. The first 16 bytes is for configuration, including 4 bytes for data0/data1. 
+The remainder can be used for EEPROM values and their inverse. The method to write these bytes can be different per chip. 
+ -    64B  => 2+(64-16)/2=2+24=26B:    CH32V003
+ -   128B => 2+(128-16)/2=2+56=58B:   CH32V103, CH32V20x, CH32V30x/31x
+ -   256B => 2+(256-16)/2=2+120=122B: CH32V002/V004/V006/V007, CH32X033/X035
+ 
+Currently tested to work: CH32V003/CH32V002/CH32V006/CH32X033.
+(CH32VM00X required updated ch32v00x_flash.c from latest EVT code)
 Future releases of this library may support other CH32 processors and allow for larger memory sizes.
 
 ### **How to use this library**
