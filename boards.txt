@@ -62,6 +62,7 @@ CH32V00x_EVT.menu.upload_method.ispMethod.upload.protocol=
 CH32V00x_EVT.menu.upload_method.ispMethod.upload.options=
 CH32V00x_EVT.menu.upload_method.ispMethod.upload.tool=wchisp
 
+
 # Peripherals Options
 CH32V00x_EVT.menu.periADC.disable=disabled (default)
 CH32V00x_EVT.menu.periADC.disable.build.periADC=
@@ -87,6 +88,7 @@ CH32V00x_EVT.menu.periTimer.disable=disabled (default)
 CH32V00x_EVT.menu.periTimer.disable.build.periTimer=
 CH32V00x_EVT.menu.periTimer.enable=enabled
 CH32V00x_EVT.menu.periTimer.enable.build.periTimer=-DTIM_MODULE_ENABLED
+
 
 # Clock Select
 CH32V00x_EVT.menu.clock.48MHz_HSI=48MHz Internal
@@ -215,6 +217,7 @@ CH32VM00X_EVT.menu.pnum.CH32V006F8.build.IQ_math_RV32=
 CH32VM00X_EVT.menu.pnum.CH32V006F8.build.ch_extra_lib=-lprintf
 CH32VM00X_EVT.menu.pnum.CH32V006F8.build.ldscript=Link.ld
 
+
 # Upload menu
 CH32VM00X_EVT.menu.upload_method.swdMethod=WCH-SWD
 CH32VM00X_EVT.menu.upload_method.swdMethod.upload.protocol=
@@ -251,7 +254,6 @@ CH32VM00X_EVT.menu.periTimer.disable=disabled (default)
 CH32VM00X_EVT.menu.periTimer.disable.build.periTimer=
 CH32VM00X_EVT.menu.periTimer.enable=enabled
 CH32VM00X_EVT.menu.periTimer.enable.build.periTimer=-DTIM_MODULE_ENABLED
-
 
 
 # Clock Select
@@ -372,6 +374,7 @@ CH32X035_EVT.menu.upload_method.ispMethod=WCH-ISP
 CH32X035_EVT.menu.upload_method.ispMethod.upload.protocol=
 CH32X035_EVT.menu.upload_method.ispMethod.upload.options=
 CH32X035_EVT.menu.upload_method.ispMethod.upload.tool=wchisp
+
 
 # Peripherals Options
 CH32X035_EVT.menu.periADC.disable=disabled (default)
@@ -500,6 +503,33 @@ CH32V10x_EVT.menu.upload_method.ispMethod=WCH-ISP
 CH32V10x_EVT.menu.upload_method.ispMethod.upload.protocol=
 CH32V10x_EVT.menu.upload_method.ispMethod.upload.options=
 CH32V10x_EVT.menu.upload_method.ispMethod.upload.tool=wchisp
+
+
+# Peripherals Options
+CH32V10x_EVT.menu.periADC.disable=disabled (default)
+CH32V10x_EVT.menu.periADC.disable.build.periADC=
+CH32V10x_EVT.menu.periADC.enable=enabled
+CH32V10x_EVT.menu.periADC.enable.build.periADC=-DADC_MODULE_ENABLED
+CH32V10x_EVT.menu.periUART.disable=disabled (default)
+CH32V10x_EVT.menu.periUART.disable.build.periUART=
+CH32V10x_EVT.menu.periUART.enable=enabled
+CH32V10x_EVT.menu.periUART.enable.build.periUART=-DUART_MODULE_ENABLED
+CH32V10x_EVT.menu.periSPI.disable=disabled (default)
+CH32V10x_EVT.menu.periSPI.disable.build.periSPI=
+CH32V10x_EVT.menu.periSPI.enable=enabled
+CH32V10x_EVT.menu.periSPI.enable.build.periSPI=-DSPI_MODULE_ENABLED
+CH32V10x_EVT.menu.periI2C.disable=disabled (default)
+CH32V10x_EVT.menu.periI2C.disable.build.periI2C=
+CH32V10x_EVT.menu.periI2C.enable=enabled
+CH32V10x_EVT.menu.periI2C.enable.build.periI2C=-DI2C_MODULE_ENABLED
+CH32V10x_EVT.menu.periI2Cslave.disable=disabled (default)
+CH32V10x_EVT.menu.periI2Cslave.disable.build.periI2Cslave=-DOPT_I2C_SLAVE=0
+CH32V10x_EVT.menu.periI2Cslave.enable=enabled
+CH32V10x_EVT.menu.periI2Cslave.enable.build.periI2Cslave=-DOPT_I2C_SLAVE=1
+CH32V10x_EVT.menu.periTimer.disable=disabled (default)
+CH32V10x_EVT.menu.periTimer.disable.build.periTimer=
+CH32V10x_EVT.menu.periTimer.enable=enabled
+CH32V10x_EVT.menu.periTimer.enable.build.periTimer=-DTIM_MODULE_ENABLED
 
 
 # Clock Select
@@ -687,6 +717,7 @@ CH32V20x_EVT.menu.usb.tinyusb_usbd.build.usb_flags=-DUSBCON -DUSE_TINYUSB -DCFG_
 CH32V20x_EVT.menu.usb.tinyusb_usbfs=Adafruit TinyUSB with USBFS
 CH32V20x_EVT.menu.usb.tinyusb_usbfs.build.usb_flags=-DUSBCON -DUSE_TINYUSB -DCFG_TUD_WCH_USBIP_USBFS=1 "-I{runtime.platform.path}/libraries/Adafruit_TinyUSB_Arduino/src/arduino"
 
+
 # Upload menu
 CH32V20x_EVT.menu.upload_method.swdMethod=WCH-SWD
 CH32V20x_EVT.menu.upload_method.swdMethod.upload.protocol=
@@ -696,6 +727,33 @@ CH32V20x_EVT.menu.upload_method.ispMethod=WCH-ISP
 CH32V20x_EVT.menu.upload_method.ispMethod.upload.protocol=
 CH32V20x_EVT.menu.upload_method.ispMethod.upload.options=
 CH32V20x_EVT.menu.upload_method.ispMethod.upload.tool=wchisp
+
+
+# Peripherals Options
+CH32V20x_EVT.menu.periADC.disable=disabled (default)
+CH32V20x_EVT.menu.periADC.disable.build.periADC=
+CH32V20x_EVT.menu.periADC.enable=enabled
+CH32V20x_EVT.menu.periADC.enable.build.periADC=-DADC_MODULE_ENABLED
+CH32V20x_EVT.menu.periUART.disable=disabled (default)
+CH32V20x_EVT.menu.periUART.disable.build.periUART=
+CH32V20x_EVT.menu.periUART.enable=enabled
+CH32V20x_EVT.menu.periUART.enable.build.periUART=-DUART_MODULE_ENABLED
+CH32V20x_EVT.menu.periSPI.disable=disabled (default)
+CH32V20x_EVT.menu.periSPI.disable.build.periSPI=
+CH32V20x_EVT.menu.periSPI.enable=enabled
+CH32V20x_EVT.menu.periSPI.enable.build.periSPI=-DSPI_MODULE_ENABLED
+CH32V20x_EVT.menu.periI2C.disable=disabled (default)
+CH32V20x_EVT.menu.periI2C.disable.build.periI2C=
+CH32V20x_EVT.menu.periI2C.enable=enabled
+CH32V20x_EVT.menu.periI2C.enable.build.periI2C=-DI2C_MODULE_ENABLED
+CH32V20x_EVT.menu.periI2Cslave.disable=disabled (default)
+CH32V20x_EVT.menu.periI2Cslave.disable.build.periI2Cslave=-DOPT_I2C_SLAVE=0
+CH32V20x_EVT.menu.periI2Cslave.enable=enabled
+CH32V20x_EVT.menu.periI2Cslave.enable.build.periI2Cslave=-DOPT_I2C_SLAVE=1
+CH32V20x_EVT.menu.periTimer.disable=disabled (default)
+CH32V20x_EVT.menu.periTimer.disable.build.periTimer=
+CH32V20x_EVT.menu.periTimer.enable=enabled
+CH32V20x_EVT.menu.periTimer.enable.build.periTimer=-DTIM_MODULE_ENABLED
 
 
 # Clock Select
@@ -815,6 +873,7 @@ CH32V30x_EVT.menu.usb.tinyusb_usbhs.build.usb_flags=-DUSBCON -DUSE_TINYUSB -DCFG
 CH32V30x_EVT.menu.usb.tinyusb_usbfs=Adafruit TinyUSB with USBFS
 CH32V30x_EVT.menu.usb.tinyusb_usbfs.build.usb_flags=-DUSBCON -DUSE_TINYUSB -DCFG_TUD_WCH_USBIP_USBFS=1 "-I{runtime.platform.path}/libraries/Adafruit_TinyUSB_Arduino/src/arduino"
 
+
 # Upload menu
 CH32V30x_EVT.menu.upload_method.swdMethod=WCH-SWD
 CH32V30x_EVT.menu.upload_method.swdMethod.upload.protocol=
@@ -824,6 +883,33 @@ CH32V30x_EVT.menu.upload_method.ispMethod=WCH-ISP
 CH32V30x_EVT.menu.upload_method.ispMethod.upload.protocol=
 CH32V30x_EVT.menu.upload_method.ispMethod.upload.options=
 CH32V30x_EVT.menu.upload_method.ispMethod.upload.tool=wchisp
+
+
+# Peripherals Options
+CH32V30x_EVT.menu.periADC.disable=disabled (default)
+CH32V30x_EVT.menu.periADC.disable.build.periADC=
+CH32V30x_EVT.menu.periADC.enable=enabled
+CH32V30x_EVT.menu.periADC.enable.build.periADC=-DADC_MODULE_ENABLED
+CH32V30x_EVT.menu.periUART.disable=disabled (default)
+CH32V30x_EVT.menu.periUART.disable.build.periUART=
+CH32V30x_EVT.menu.periUART.enable=enabled
+CH32V30x_EVT.menu.periUART.enable.build.periUART=-DUART_MODULE_ENABLED
+CH32V30x_EVT.menu.periSPI.disable=disabled (default)
+CH32V30x_EVT.menu.periSPI.disable.build.periSPI=
+CH32V30x_EVT.menu.periSPI.enable=enabled
+CH32V30x_EVT.menu.periSPI.enable.build.periSPI=-DSPI_MODULE_ENABLED
+CH32V30x_EVT.menu.periI2C.disable=disabled (default)
+CH32V30x_EVT.menu.periI2C.disable.build.periI2C=
+CH32V30x_EVT.menu.periI2C.enable=enabled
+CH32V30x_EVT.menu.periI2C.enable.build.periI2C=-DI2C_MODULE_ENABLED
+CH32V30x_EVT.menu.periI2Cslave.disable=disabled (default)
+CH32V30x_EVT.menu.periI2Cslave.disable.build.periI2Cslave=-DOPT_I2C_SLAVE=0
+CH32V30x_EVT.menu.periI2Cslave.enable=enabled
+CH32V30x_EVT.menu.periI2Cslave.enable.build.periI2Cslave=-DOPT_I2C_SLAVE=1
+CH32V30x_EVT.menu.periTimer.disable=disabled (default)
+CH32V30x_EVT.menu.periTimer.disable.build.periTimer=
+CH32V30x_EVT.menu.periTimer.enable=enabled
+CH32V30x_EVT.menu.periTimer.enable.build.periTimer=-DTIM_MODULE_ENABLED
 
 
 # Clock Select
@@ -944,6 +1030,33 @@ CH32L10x_EVT.menu.upload_method.ispMethod=WCH-ISP
 CH32L10x_EVT.menu.upload_method.ispMethod.upload.protocol=
 CH32L10x_EVT.menu.upload_method.ispMethod.upload.options=
 CH32L10x_EVT.menu.upload_method.ispMethod.upload.tool=wchisp
+
+
+# Peripherals Options
+CH32L10x_EVT.menu.periADC.disable=disabled (default)
+CH32L10x_EVT.menu.periADC.disable.build.periADC=
+CH32L10x_EVT.menu.periADC.enable=enabled
+CH32L10x_EVT.menu.periADC.enable.build.periADC=-DADC_MODULE_ENABLED
+CH32L10x_EVT.menu.periUART.disable=disabled (default)
+CH32L10x_EVT.menu.periUART.disable.build.periUART=
+CH32L10x_EVT.menu.periUART.enable=enabled
+CH32L10x_EVT.menu.periUART.enable.build.periUART=-DUART_MODULE_ENABLED
+CH32L10x_EVT.menu.periSPI.disable=disabled (default)
+CH32L10x_EVT.menu.periSPI.disable.build.periSPI=
+CH32L10x_EVT.menu.periSPI.enable=enabled
+CH32L10x_EVT.menu.periSPI.enable.build.periSPI=-DSPI_MODULE_ENABLED
+CH32L10x_EVT.menu.periI2C.disable=disabled (default)
+CH32L10x_EVT.menu.periI2C.disable.build.periI2C=
+CH32L10x_EVT.menu.periI2C.enable=enabled
+CH32L10x_EVT.menu.periI2C.enable.build.periI2C=-DI2C_MODULE_ENABLED
+CH32L10x_EVT.menu.periI2Cslave.disable=disabled (default)
+CH32L10x_EVT.menu.periI2Cslave.disable.build.periI2Cslave=-DOPT_I2C_SLAVE=0
+CH32L10x_EVT.menu.periI2Cslave.enable=enabled
+CH32L10x_EVT.menu.periI2Cslave.enable.build.periI2Cslave=-DOPT_I2C_SLAVE=1
+CH32L10x_EVT.menu.periTimer.disable=disabled (default)
+CH32L10x_EVT.menu.periTimer.disable.build.periTimer=
+CH32L10x_EVT.menu.periTimer.enable=enabled
+CH32L10x_EVT.menu.periTimer.enable.build.periTimer=-DTIM_MODULE_ENABLED
 
 
 # Clock Select
