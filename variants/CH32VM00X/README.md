@@ -3,7 +3,7 @@
 Currently supported board variants (listed in **bold**):
 |        |  QFN32 |QSOP24|QFN20|[TSSOP20](#tssop20-pinout) |SSOP16|QFN12|SOP8 | |
 |--------|--------|------|-----|--------|------|-----|-----|---|
-|CH32V002|_n/a_   |_n/a_ |     |**F4P6**|      |     |     | |
+|CH32V002|_n/a_   |_n/a_ |     |**F4P6**|      |**D4U6**|     | |
 |CH32V004|_n/a_   |_n/a_ |     |        |_n/a_ |_n/a_|_n/a_| |
 |CH32V005|_n/a_   |      |     |        |_n/a_ |     |_n/a_| |
 |CH32V006|**K8U6**|      |     |**F8P6**|_n/a_ |_n/a_|_n/a_| |
