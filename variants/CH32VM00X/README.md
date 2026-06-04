@@ -6,7 +6,7 @@ Currently supported board variants (listed in **bold**):
 |CH32V002|_n/a_   |_n/a_ |     |**F4P6**|      |     |     | |
 |CH32V004|_n/a_   |_n/a_ |     |        |_n/a_ |_n/a_|_n/a_| |
 |CH32V005|_n/a_   |      |     |        |_n/a_ |     |_n/a_| |
-|CH32V006|**K8U6**|      |     |**F6P6**|_n/a_ |_n/a_|_n/a_| |
+|CH32V006|**K8U6**|      |     |**F8P6**|_n/a_ |_n/a_|_n/a_| |
 |CH32V007|        |      |_n/a_| _n/a_  |_n/a_ |_n/a_|_n/a_| |
 |CH32M007|_n/a_   |      |_n/a_| _n/a_  |_n/a_ |_n/a_|_n/a_| * |
 
@@ -17,7 +17,7 @@ Currently supported board variants (listed in **bold**):
 
 ### TSSOP20 PINOUT ###
 Arduino pin numbers D0-D17, A0-A7.
-Shared pinout for CH32V003F4P6 /CH32V002F4P6/CH32V006F8P6
+Shared pinout for CH32V003F4P6 / CH32V002F4P6 / CH32V006F8P6.
 
 ```
                 +-----v-----+
