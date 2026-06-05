@@ -21,4 +21,4 @@ V002 QFN12->DIP14 DEV-BOARD PINOUT
  - Up to 11 I/O pins
  - SPI is not available (no SCK pin)
  - SCL and RX are shared with SWIO pin
- - Requires updated core and tools. See [these notes](../#known-issues--limitations).
+ - Requires updated core and tools. See [these notes](../README.md#known-issues--limitations).
