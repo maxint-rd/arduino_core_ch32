@@ -6,7 +6,7 @@ Currently supported board variants (listed in **bold**):
 |CH32V002|_n/a_   |_n/a_ |     |**F4P6**|      |**D4U6**|     | |
 |CH32V004|_n/a_   |_n/a_ |     |        |_n/a_ |_n/a_|_n/a_| |
 |CH32V005|_n/a_   |      |     |        |_n/a_ |     |_n/a_| |
-|CH32V006|**K8U6**|      |     |**F8P6**|_n/a_ |_n/a_|_n/a_| |
+|CH32V006|**K8U6**|      |**F8U6**|**F8P6**|_n/a_ |_n/a_|_n/a_| |
 |CH32V007|        |      |_n/a_| _n/a_  |_n/a_ |_n/a_|_n/a_| |
 |CH32M007|_n/a_   |      |_n/a_| _n/a_  |_n/a_ |_n/a_|_n/a_| * |
 
