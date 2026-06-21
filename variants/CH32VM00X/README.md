@@ -8,7 +8,7 @@ Currently supported board variants (listed in **bold**):
 |CH32V005|_n/a_   |      |     |        |_n/a_ |     |_n/a_| |
 |CH32V006|**K8U6**|**E8R6**|**F8U6**|**F8P6**|_n/a_ |_n/a_|_n/a_| |
 |CH32V007|        |      |_n/a_| _n/a_  |_n/a_ |_n/a_|_n/a_| |
-|CH32M007|_n/a_   |      |_n/a_| _n/a_  |_n/a_ |_n/a_|_n/a_| * |
+|CH32M007|_n/a_   |**E8R6**|_n/a_| _n/a_  |_n/a_ |_n/a_|_n/a_| * |
 
  - See [notes below](#known-issues--limitations) for known issues and installation instructions.
  - CH32M007 also available in QFN26/QSOP28 (no specfic support yet).
