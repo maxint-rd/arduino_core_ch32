@@ -38,10 +38,11 @@ MOSI/A8/TX4 D7  2-+PA7=PB0   PA4+-19  D4~ CS/A4
 - Pin PB7 (Arduino pin 9) can be configured as hardware reset /RST using WCH Link Utility. (See issue #123)
 
 ### Known issues/limitations ###
-- Pins PA7/PB0, PC16/PC11 and PC17/PC10 cannot be used for output.
+- Pins PA7/PB0, PC16/PC11 and PC17/PC10 are shorted together and cannot be used for output simultaneously. When using one of the pair for output in any form, the other should be unassigned or set to input.
 - Any signal on A0 seems to show on other ADC pins when disconnected.
 - A3, PADC_VREF and I2C don't work on CH32X033F8P6 0-series (lot number with the penultimate bit 5 being 0).
-- To counter missing I2C the [Software_I2C library](https://github.com/Seeed-Studio/Arduino_Software_I2C) by Seeed Studio is a good alternative, although it needs some changes to improve compatibility in I2C scanning.
+- To counter missing I2C on the 0-series, the [Software_I2C library](https://github.com/Seeed-Studio/Arduino_Software_I2C) by Seeed Studio is a good alternative, although it needs some changes to improve compatibility in I2C scanning. (TODO: publish modified library).
+- The [CH32X035 CDC Serial library](https://github.com/jobitjoseph/CH32X035_USBSerial) also works on CH32X033F8P6. Although limited to only USB Serial, that library is very easy to use. I tested the USB UART Passthrough example. For that example make sure to have `Serial.available()` fixed by PR https://github.com/openwch/arduino_core_ch32/pull/201. 
 
 ### References ###
 - [datasheet](https://www.wch.cn/downloads/CH32X035DS0_PDF.html)
